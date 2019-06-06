@@ -1,0 +1,166 @@
+$jumbotron-mark-bg: #063252;
+$wrapper-padding: 6.25rem;
+$emphasis-text1: #2b8ec8;
+$mission-bg: $emphasis-text1;
+$mission-line: #375571;
+$span-right-emphasis: #98c7f3;
+$mission-services-h1:  3.125em;
+.jumbotron {
+  background: rgb(202,202,202);
+  background: linear-gradient(90deg, rgba(202,202,202,1) 0%, rgba(26,59,74,1) 44%);
+
+}
+.jumbotronContent {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  align-content: space-between;
+}
+
+div.text1 {
+
+}
+h1.text1 {
+  font-size: 4.875rem;
+  font-weight: bold;
+  color: white;
+
+
+}
+h1.text1 mark {
+  background: $jumbotron-mark-bg;
+  color: #fff;
+  padding: 0 15px 10px 0rem;
+  box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
+}
+
+
+span.space {
+  display: inline-block;
+  width: 4rem;
+  height: 3rem;
+}
+span.emphasis-text1 {
+  color: $emphasis-text1;
+}
+
+.text2 p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-left: 1.0em;
+}
+
+.text2 span {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: #2b8ec8;
+  clear: right;
+}
+
+a.contact-btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding:2rem 0;
+  float: right;
+  position: relative;
+  top: 0px;
+  margin-right: 5rem;
+  background: $emphasis-text1;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
+}
+
+.mission {
+  background: $mission-bg;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 3.0em 0 0 0;
+  max-height: 700px;
+  border-top: 1px solid #fff;
+
+  div.wrapper {
+    display: flex;
+    .left {
+      line-height: 40px;
+      h1 {
+        font-size: $mission-services-h1;
+        line-height: 50px;
+
+        span {
+          text-decoration: underline;
+          text-decoration-color: $mission-line;
+        }
+      }
+
+      p{
+        margin: 30px 30px 30px 0;
+
+        .emphasis {
+          font-weight: bold;
+        }
+      }
+
+      p:nth-child(3){
+        margin-top: 20px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.563em;
+      font-weight: bold;
+      text-align: center;
+      p{
+        position: relative;
+        top:7px;
+        .emphasis{
+          color: $span-right-emphasis;
+        }
+      }
+
+      img {
+        width: 500px;
+        box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
+      }
+    }
+  }
+}
+
+.services {
+  .wrapper{
+    padding: 5.0em 0 3.0em;
+    h1 {
+      font-size: $mission-services-h1;
+      line-height: 50px;
+      color: $emphasis-text1;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .content {
+      display: flex;
+      margin: 0 auto;
+      align-content: space-between;
+      justify-content: center;
+      .left{
+        margin: 20px;
+      }
+      .right{
+        padding: 20px;
+        text-align: center;
+        width: 450px;
+        height: 500px;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-top: 2px solid ;
+        border-bottom: 2px solid;
+        border-color: $emphasis-text1;
+      }
+    }
+  }
+}

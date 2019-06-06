@@ -1,0 +1,60 @@
+@import 'utils';
+
+$font-stack: 'Source Sans Pro', sans-serif;
+$body-bg-color: #FFF;
+$body-text-color: #2d4b68;
+$jumbotron-mark-bg: #063252;
+$h1: 2.5rem; //40px
+$footer-height: 38em;
+$wrapper-padding: 0 6.25rem;
+
+.wrapper{
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: $wrapper-padding;
+}
+
+body {
+  margin: 0;
+  background: $body-bg-color;
+  box-sizing: border-box;
+  font:{
+    family: $font-stack;
+    weight: 300;
+  }
+  color: $body-text-color;
+  height: 100%;
+}
+h1{
+  font:{
+    size: $h1;
+    weight: 600;
+  }
+  margin: 0;
+
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+#container{
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: $footer-height; //preserves footer by keeping it at the bottom w/o having a gap
+}
+
+#topper {
+
+}
+
+#content {
+  height: 100%;
+
+}

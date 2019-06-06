@@ -1,0 +1,17 @@
+node_modules/
+
+node_modules/**
+
+OLD/
+
+OLD/**
+
+.idea/
+
+.idea/**
+
+eslint.config.json
+
+gulpfile.js
+
+package-lock.json
