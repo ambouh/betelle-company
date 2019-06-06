@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/betelle-company/precache-manifest.b536501c251207a6f983c72a3956aa93.js"
+  "/betelle-company/precache-manifest.72dc7396f06664277a5037de6affdc2a.js"
 );
 
 workbox.clientsClaim();
