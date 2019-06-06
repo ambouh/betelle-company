@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.573a6e30.chunk.css",
-  "main.js": "/static/js/main.19b9732d.chunk.js",
-  "main.js.map": "/static/js/main.19b9732d.chunk.js.map",
-  "static/js/1.81f0f588.chunk.js": "/static/js/1.81f0f588.chunk.js",
-  "static/js/1.81f0f588.chunk.js.map": "/static/js/1.81f0f588.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/mission.png": "/static/media/mission.093dd1a8.png",
-  "static/css/main.573a6e30.chunk.css.map": "/static/css/main.573a6e30.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.e936a695eacea284febef5a8fbaf2d77.js": "/precache-manifest.e936a695eacea284febef5a8fbaf2d77.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/betelle-company/static/css/main.573a6e30.chunk.css",
+  "main.js": "/betelle-company/static/js/main.32c22194.chunk.js",
+  "main.js.map": "/betelle-company/static/js/main.32c22194.chunk.js.map",
+  "static/js/1.81f0f588.chunk.js": "/betelle-company/static/js/1.81f0f588.chunk.js",
+  "static/js/1.81f0f588.chunk.js.map": "/betelle-company/static/js/1.81f0f588.chunk.js.map",
+  "runtime~main.js": "/betelle-company/static/js/runtime~main.4136e793.js",
+  "runtime~main.js.map": "/betelle-company/static/js/runtime~main.4136e793.js.map",
+  "static/media/mission.png": "/betelle-company/static/media/mission.093dd1a8.png",
+  "static/css/main.573a6e30.chunk.css.map": "/betelle-company/static/css/main.573a6e30.chunk.css.map",
+  "index.html": "/betelle-company/index.html",
+  "precache-manifest.91bf77c8b77f5f5b572534d728fe810c.js": "/betelle-company/precache-manifest.91bf77c8b77f5f5b572534d728fe810c.js",
+  "service-worker.js": "/betelle-company/service-worker.js"
 }
