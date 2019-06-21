@@ -28,6 +28,7 @@ $color-lite: lighten($color, 10%);
   padding-bottom: 2.188em;
   padding-top: 2.188em;
   border-top: 5px solid #0077bd;
+  background: #1a3b4a;
 }
 
 /*1 - in Garbage.scss goes here*/
@@ -144,6 +145,10 @@ ul.menu {
     a {
       color: white;
       text-decoration: none;
+
+      &:hover{
+        color: #2b8ec8;
+      }
     }
     &:after {
       opacity: 0;
