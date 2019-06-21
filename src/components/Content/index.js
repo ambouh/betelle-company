@@ -9,7 +9,10 @@ import {Route, Switch} from "react-router-dom";
 class Content extends Component {
 
     render(){
+        let style = {};
+
         return (
+
             <div id={"content"}>
                 <Switch>
                     <Route exact path={"/"} component={Home}/>

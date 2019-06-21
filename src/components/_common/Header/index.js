@@ -10,6 +10,7 @@ class Header extends Component {
     toggleMenu = () => {
         $('body').toggleClass('open');
     };
+
     render(){
         return (
             <header className={cx('header')}>
