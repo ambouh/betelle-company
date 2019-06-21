@@ -5,7 +5,7 @@ import Mission from './Mission';
 import Services from './Services';
 import classNames from 'classnames/bind';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
 class Home extends Component {
     render(){

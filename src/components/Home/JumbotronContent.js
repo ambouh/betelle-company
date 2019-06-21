@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
+import background from "../../images/jumboBG.png";
 //import {Link, withRouter} from 'react-router-dom';
 
 class JumbotronContent extends Component {
     jumbotronStyle = {
-        background: "url(../../images/jumboBG.png) no-repeat right top",
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top right",
         backgroundSize: "contain",
         paddingTop: "150px"
     }
@@ -23,7 +26,7 @@ class JumbotronContent extends Component {
                             <mark>strong experience.</mark>
                         </h1>
 
-                        <a to={"/"} href={"#"} className={"contact-btn"}>Contact Us <FontAwesomeIcon icon={faAngleRight} size="1x"/></a>
+                        <a href={"/"} className={"contact-btn"}>Contact Us <FontAwesomeIcon icon={faAngleRight} size="1x"/></a>
                     </div>
 
                     <div className={"text2"}>

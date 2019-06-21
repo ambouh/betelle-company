@@ -30,58 +30,7 @@ $color-lite: lighten($color, 10%);
   border-top: 5px solid #0077bd;
 }
 
-/*p {
-  font-size: 20px;
-  line-height: 28px;
-  margin: 0 0 18px;
-  span {
-    position: relative;
-    display: block;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 12px 20px;
-    margin-bottom: 24px;
-    background-color: white;
-    box-shadow: rgba(black, 0.05) 0px 2px 4px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; bottom: 0; left: -12px;
-      margin: auto;
-      background-color: $color;
-      width: 24px;
-      height: 24px;
-      border-radius: 100%;
-      box-shadow: rgba(black, 0.1) 0 0 0 3px;
-    }
-    &:after {
-      content: '';
-      pointer-events: none;
-      position: absolute;
-      top: -2px; bottom: 0; left: -6px;
-      margin: auto;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 6px 8px 6px;
-      border-color: transparent transparent white transparent;
-    }
-  }
-}
-
-
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  li {
-    cursor: pointer;
-    padding: 6px 20px;
-    font-size: 48px;
-  }
-}
-*/
+/*1 - in Garbage.scss goes here*/
 button {
   opacity: 0.6;
   background-color: transparent;
@@ -130,6 +79,7 @@ button {
   }
   .open & {
     opacity: 1;
+    position: fixed;
     &:before {
       opacity: 0;
       width: 0;
@@ -143,7 +93,6 @@ button {
     }
   }
 }
-
 nav {
   z-index: 1;
   position: fixed;
@@ -180,23 +129,25 @@ ul.menu {
   backface-visibility: hidden;
   perspective: 1000;
   color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   li {
     opacity: 0;
     text-align: center;
     transform: translate3d(0,36px,0);
-    &:before {
-      content: '';
-      @include position-center;
-      left: auto;
-      background-color: white;
-      height: 100%;
-      width: 0;
-      overflow: hidden;
-      transition: width 0.14s ease-out;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 48px;
+    font-weight: 400;
+    a {
+      color: white;
+      text-decoration: none;
     }
     &:after {
       opacity: 0;
-      content: attr(data-text);
+      //content: attr(data-text);
       @include position-center;
       color: $color;
       overflow: hidden;
@@ -230,16 +181,7 @@ ul.menu {
   }
 }
 
-article {
-  padding: 24px;
-  max-width: 600px;
-  margin: 60px auto;
-  transition: 0.2s ease-out;
-  .open & {
-    transform: scale(0.92);
-    transition: transform 0.2s 0.41s ease-out;
-  }
-}
+/*2 - in Garbage.scss goes here*/
 
 @keyframes menu-animation {
   0% {
