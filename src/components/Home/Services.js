@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ServiceCollapse from "./ServiceCollapse";
 
 class Services extends Component {
     render(){
@@ -15,7 +16,7 @@ class Services extends Component {
                             </div>
                         </div>
                         <div className={"right"}>
-                            all services go here.
+                            <ServiceCollapse/>
                         </div>
                     </div>
 

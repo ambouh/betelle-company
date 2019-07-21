@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styles from './Header.scss';
 import classNames from 'classnames/bind';
 import $ from 'jquery';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+
 
 const cx = classNames.bind(styles);
 
@@ -12,8 +13,11 @@ class Header extends Component {
     };
 
     render(){
+
+        let background = (this.props.isHome)? "transparentBg" : "colorBg";
+
         return (
-            <header className={cx('header')}>
+            <header className={cx('header') + " " + background} >
                 <div className="wrapper">
                     <a className="header-logo" href={"/"}>
                         <svg id="Logo_SVG_Trial_copy" data-name="Logo SVG Trial copy" xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,7 @@ class Header extends Component {
                     <div className={"menu-wrapper"}>
                         <button className="menu-toggle" onClick={this.toggleMenu}></button>
                         <nav>
-                            <ul className="menu">
+                            <ul className="menu" >
                                 <li><Link to={"/"}>Home</Link></li>
                                 <li><Link to={"/about"}>Who We Are</Link></li>
                                 <li><Link to={"/services"}>Services</Link></li>

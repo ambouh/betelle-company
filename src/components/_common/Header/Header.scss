@@ -28,6 +28,13 @@ $color-lite: lighten($color, 10%);
   padding-bottom: 2.188em;
   padding-top: 2.188em;
   border-top: 5px solid #0077bd;
+}
+
+.transparentBg {
+  background: transparent;
+}
+
+.colorBg {
   background: #1a3b4a;
 }
 

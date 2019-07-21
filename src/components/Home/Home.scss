@@ -161,6 +161,26 @@ a.contact-btn {
         border-top: 2px solid ;
         border-bottom: 2px solid;
         border-color: $emphasis-text1;
+
+        .collapseWrapper {
+          display: block;
+          .card {
+            border-top: 2px solid $jumbotron-mark-bg;
+            border-bottom: 2px solid $jumbotron-mark-bg;
+            .title {
+              border-bottom: 1px solid $jumbotron-mark-bg;
+            }
+            .body{
+              border-bottom: 1px solid $jumbotron-mark-bg;
+              &.show {
+                display: block;
+              }
+              &.collapse {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
   }

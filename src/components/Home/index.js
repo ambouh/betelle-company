@@ -4,10 +4,12 @@ import Jumbotron from './Jumbotron';
 import Mission from './Mission';
 import Services from './Services';
 import classNames from 'classnames/bind';
+import ReactDOM from 'react-dom';
 
 const cx = classNames.bind(styles);
 
 class Home extends Component {
+
     render(){
         return (
             <div className={cx('Home')} >
