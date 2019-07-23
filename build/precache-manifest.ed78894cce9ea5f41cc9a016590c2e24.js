@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/betelle-company/static/js/runtime~main.4136e793.js"
   },
   {
-    "revision": "62802df10884872fe042",
-    "url": "/betelle-company/static/js/main.62802df1.chunk.js"
+    "revision": "e7f42a609194d57e85ba",
+    "url": "/betelle-company/static/js/main.e7f42a60.chunk.js"
   },
   {
-    "revision": "7c88bf86c45c15028aac",
-    "url": "/betelle-company/static/js/1.7c88bf86.chunk.js"
+    "revision": "4a7cf2caa54865f373b5",
+    "url": "/betelle-company/static/js/1.4a7cf2ca.chunk.js"
   },
   {
-    "revision": "62802df10884872fe042",
-    "url": "/betelle-company/static/css/main.84c8a5ee.chunk.css"
+    "revision": "e7f42a609194d57e85ba",
+    "url": "/betelle-company/static/css/main.1800a438.chunk.css"
   },
   {
-    "revision": "a6f797c736038499cc8582aaba40d19e",
+    "revision": "9ca07dd931dde961e9f7f1c475071de4",
     "url": "/betelle-company/index.html"
   }
 ];

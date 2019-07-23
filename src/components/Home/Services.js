@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ServiceCollapse from "./ServiceCollapse";
+import ServiceWrapper from "./ServiceWrapper";
 
 class Services extends Component {
     render(){
@@ -16,7 +16,7 @@ class Services extends Component {
                             </div>
                         </div>
                         <div className={"right"}>
-                            <ServiceCollapse/>
+                            <ServiceWrapper/>
                         </div>
                     </div>
 

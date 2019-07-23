@@ -8,10 +8,23 @@ import {Link} from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 class Header extends Component {
-    toggleMenu = () => {
-        $('body').toggleClass('open');
-    };
 
+    constructor(props) {
+        super(props)
+
+        this.menu = React.createRef();
+        this.menuBtn = React.createRef();
+    }
+/*    toggleMenu = () => {
+        $('body').toggleClass();
+    };*/
+
+    handleOpen = () => {
+        const menu = this.menu.current;
+        const isOpen = menu.classList.contains('open');
+        menu.classList.toggle('open', !isOpen)
+
+    };
     render(){
 
         let background = (this.props.isHome)? "transparentBg" : "colorBg";
@@ -30,10 +43,10 @@ class Header extends Component {
                                   d="M202.5 13.37a2.8 2.8 0 0 0 0 3.94 2.74 2.74 0 0 0 3.92 0 2.8 2.8 0 0 0 0-3.94 2.77 2.77 0 0 0-3.91 0z"/>
                         </svg>
                     </a>
-                    <div className={"menu-wrapper"}>
-                        <button className="menu-toggle" onClick={this.toggleMenu}></button>
-                        <nav>
-                            <ul className="menu" >
+                    <div className={"menu-wrapper"} ref={this.menu}>
+                        <button className="menu-toggle" onClick={this.handleOpen}></button>
+                        <nav >
+                            <ul className="menu" onClick={this.handleOpen}>
                                 <li><Link to={"/"}>Home</Link></li>
                                 <li><Link to={"/about"}>Who We Are</Link></li>
                                 <li><Link to={"/services"}>Services</Link></li>
