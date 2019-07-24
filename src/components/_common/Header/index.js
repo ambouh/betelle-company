@@ -32,7 +32,7 @@ class Header extends Component {
         return (
             <header className={cx('header') + " " + background} >
                 <div className="wrapper">
-                    <a className="header-logo" href={"/"}>
+                    <Link className="header-logo" to={"/"}>
                         <svg id="Logo_SVG_Trial_copy" data-name="Logo SVG Trial copy" xmlns="http://www.w3.org/2000/svg"
                              xmlnsXlink="http://www.w3.org/1999/xlink" width="223" height="65">
                             <image id="b" width="61" height="65"
@@ -42,7 +42,7 @@ class Header extends Component {
                             <path id="dot" className="cls-1" fill="#fff" fillRule="evenodd"
                                   d="M202.5 13.37a2.8 2.8 0 0 0 0 3.94 2.74 2.74 0 0 0 3.92 0 2.8 2.8 0 0 0 0-3.94 2.77 2.77 0 0 0-3.91 0z"/>
                         </svg>
-                    </a>
+                    </Link>
                     <div className={"menu-wrapper"} ref={this.menu}>
                         <button className="menu-toggle" onClick={this.handleOpen}></button>
                         <nav >

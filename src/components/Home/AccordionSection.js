@@ -30,7 +30,8 @@ class AccordionSection extends Component {
         fontSize: '35px',
         fontWeight: 100,
         float: 'right',
-        color: '#2b8ec8'
+        color: '#2b8ec8',
+        lineHeight: '1'
     };
 
     accordionText = {
