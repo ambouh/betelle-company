@@ -15,9 +15,6 @@ class Header extends Component {
         this.menu = React.createRef();
         this.menuBtn = React.createRef();
     }
-/*    toggleMenu = () => {
-        $('body').toggleClass();
-    };*/
 
     handleOpen = () => {
         const menu = this.menu.current;

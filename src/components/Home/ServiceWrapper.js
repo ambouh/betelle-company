@@ -47,7 +47,6 @@ class ServiceWrapper extends Component {
                             accumsan lacus vel facilisis.
                         </p>
                     </div>
-
                 </Accordion>
             </div>
         );
