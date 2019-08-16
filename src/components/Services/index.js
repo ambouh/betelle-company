@@ -10,7 +10,7 @@ class Services extends Component {
 
     render(){
         return (
-            <Default title={"Our Services"}/>
+            <Default title={"Services"}/>
         );
     }
 }

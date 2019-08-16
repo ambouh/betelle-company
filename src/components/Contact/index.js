@@ -8,7 +8,7 @@ class Contact extends Component {
 
     render(){
         return (
-            <Default title={"Contact Us"}/>
+            <Default title={"Contact"}/>
         );
     }
 }

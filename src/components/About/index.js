@@ -9,7 +9,7 @@ class About extends Component {
 
     render(){
         return (
-                <Default title={"Who We Are"}/>
+                <Default title={"Company"}/>
         );
     }
 }
