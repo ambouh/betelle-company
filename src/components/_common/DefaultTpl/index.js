@@ -27,7 +27,7 @@ const Default = (props) => {
         display: 'flex',
         flexDirection: 'column',
         background: '#2c4c68',
-        padding: '0 5.625rem 5.625rem'
+        paddingBottom: '5.625rem'
     };
 
     let span = {
@@ -45,9 +45,12 @@ const Default = (props) => {
 
     return (
         <div style={wrapper}>
-            <h1 style={h1}>{props.title}</h1>
-            <p style={paragraph}>At Betelle, helping businesses is fulfilling work. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <p style={construction}>{props.title} component is under construction</p>
+
+            <div className={"wrapper"}>
+                <h1 style={h1}>{props.title}</h1>
+                <p style={paragraph}>At Betelle, helping businesses is fulfilling work. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p style={construction}>{props.title} component is under construction</p>
+            </div>
         </div>
     );
 };

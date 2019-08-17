@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import background from "../../images/jumboBG.png";
-//import {Link, withRouter} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class JumbotronContent extends Component {
     jumbotronStyle = {
@@ -26,7 +26,7 @@ class JumbotronContent extends Component {
                             <mark>strong experience.</mark>
                         </h1>
 
-                        <a href={"/"} className={"contact-btn"}>Contact Us <FontAwesomeIcon icon={faAngleRight} size="1x"/></a>
+                        <Link to={"/contact"} className={"contact-btn"}>Contact Us <FontAwesomeIcon icon={faAngleRight} size="1x"/></Link>
                     </div>
 
                     <div className={"text2"}>

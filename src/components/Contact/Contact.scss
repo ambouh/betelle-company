@@ -1,0 +1,71 @@
+$contactFormBg: #f1f5f8;
+$emphasis-text1: #2b8ec8;
+.ContactFormContent {
+  background: $contactFormBg;
+  padding: 0 0 3rem;
+  h3{
+    margin: 0;
+    border-left: 1px solid $emphasis-text1;
+    color: $emphasis-text1;
+    font-size: 30px;
+    padding: 1.250rem 1.250rem 3.750rem;
+    position: relative;
+    top: 2.5rem;
+    left: 3rem;
+
+  }
+  .columns-span-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .equal {
+    flex: 1;
+  }
+  form {
+    padding: 3.125rem;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+
+      label {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #2c4c68;
+        margin-bottom: 1.250rem;
+        font-size: 20px;
+      }
+
+      input {
+        border: none;
+        height: 2.188rem;
+        border-bottom: 1px solid #2b8ec8;
+        margin-bottom: 0.5rem;
+      }
+
+      textarea {
+        border: none;
+        border-bottom: 2px solid #2b8ec8;
+        margin-bottom: 0.5rem;
+        width: 30rem;
+        height: 5rem;
+        resize: vertical;
+      }
+    }
+
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 25px;
+      align-self: flex-end;
+      color: #2c4c68;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 100;
+    }
+  }
+}

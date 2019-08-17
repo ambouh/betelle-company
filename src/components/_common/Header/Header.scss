@@ -38,8 +38,7 @@ $color-lite: lighten($color, 10%);
   background: #2c4c68;
 }
 
-/*1 - in Garbage.scss goes here*/
-button {
+button.menu-toggle{
   opacity: 0.6;
   background-color: transparent;
   position: absolute;
