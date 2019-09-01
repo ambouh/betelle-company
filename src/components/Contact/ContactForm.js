@@ -32,7 +32,7 @@ class ContactForm extends Component {
                             <button type="submit">Submit
                                 <span className="fa-layers fa-fw">
                                     {/* <FontAwesomeIcon icon={faCircle}/>*/}
-                                    <FontAwesomeIcon icon={faAngleRight}/>
+                                    <FontAwesomeIcon icon={faAngleRight} mask={['far', 'circle']} />
                                 </span>
                             </button>
                         </form>

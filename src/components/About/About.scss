@@ -1,0 +1,127 @@
+$mission-bg: #2b8ec8;
+$value-txt: #2c4c68;
+.about {
+  font-size: 1.25rem;
+  line-height: 50px;
+  background: #f1f5f8;
+  padding-bottom: 5rem;
+  .columns-span-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .equal {
+    flex: 1;
+  }
+
+
+  .aboutMission {
+    background: $mission-bg;
+    color: #fff;
+
+    h1 {
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+      padding: 5.000rem 0 3rem;
+      font-size: 3.125em;
+      line-height: 50px;
+    }
+
+    p {
+      column-count: 2;
+      column-rule-style: solid;
+      column-gap: 100px;
+      column-rule-width: 1px;
+      padding-bottom: 9rem;
+      .emphasis {
+        font-weight: bold;
+        display: block;
+      }
+    }
+  }
+  .separator {
+    background: url("../../../src/images/seperator.png") no-repeat;
+    width: 351px;
+    height: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+  }
+  .aboutValueDfn {
+    .img-collage {
+      display: flex;
+      width: 620px;
+      flex-wrap: wrap;
+      position: relative;
+      left: -2rem;
+      top: -4rem;
+      text-align: center;
+
+      img {
+        margin: 0 4px ;
+      }
+
+      h1 {
+        font-size: 3.125em;
+        line-height: 50px;
+        color: $mission-bg;
+        margin: 2rem 0 0 4.5rem;
+      }
+      h1:after {
+        content: " ";
+        background: url("../../../src/images/values-border.png") no-repeat;
+        display: block;
+        width: 250px;
+        height: 50px;
+        margin: 10px auto 0;
+      }
+
+    }
+    p {
+      position: relative;
+      top: 15rem;
+    }
+  }
+  .aboutValueCtg{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+    li {
+      margin: 10px 25px;
+      width: 15rem;
+    }
+    .title {
+      display: block;
+      text-transform: uppercase;
+      color: $value-txt;
+      font-weight: bold;
+      text-align: right;
+    }
+    /*span:after {
+      content: " ";
+      display: block;
+      width: 50px;
+      height: 1px;
+      border-bottom: 1px solid $mission-bg;
+      position: relative;
+      float: right;
+      margin-right: 20px;
+    }*/
+    li:nth-child(2) {
+      width: 30rem;
+    }
+  }
+}
