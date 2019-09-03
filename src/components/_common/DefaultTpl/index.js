@@ -4,7 +4,7 @@ const Default = (props) => {
     let h1 = {
         color: '#6d8094',
         fontSize: '250px',
-        lineHeight: '165px',
+        lineHeight: '190px',
         marginBottom: '4rem'
     };
 
@@ -22,11 +22,11 @@ const Default = (props) => {
         borderImage: borderStyle,
         borderImageSlice: '1 1 1 1'
     };
-
+    //background: '#2c4c68';
     let wrapper = {
         display: 'flex',
         flexDirection: 'column',
-        background: '#2c4c68',
+        background: '#192d40',
         paddingBottom: '5.625rem'
     };
 

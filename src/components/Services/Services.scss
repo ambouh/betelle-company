@@ -1,0 +1,60 @@
+$servContainer-bg: #f1f5f8;
+$title-color: #2b8ec8;
+.servicesContainer{
+  background: $servContainer-bg;
+  padding: 0rem 0 10rem;
+
+  .columns-span-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .equal {
+    flex: 1;
+  }
+
+  .content {
+    // background: #fff;
+    border-radius: 5px;
+
+    .h2 {
+      font-size: 50px;
+      color: $title-color;
+      padding: 0;
+      margin: 0;
+    }
+    .h4 {
+      font-size: 24px;
+      color: $title-color;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0.5rem;
+    }
+
+    .right {
+      background: #FFFFFF;
+      border-top: 3px solid $title-color;
+      font-size: 1.25rem;
+      line-height: 50px;
+
+    }
+    .tab-list {
+      padding: 1rem 0 2rem 0;
+      margin: 0;
+    }
+
+    .tab-list-item {
+      display: inline-block;
+      list-style: none;
+      margin: 0.1em 0.5em 0em;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .tab-list-active {
+      background-color: white;
+      border-radius: 10px;
+    }
+
+  }
+}
