@@ -5,6 +5,7 @@ $white: #fff;
 $footer-text-color: #FFF;
 $footer-text: 1.25rem; //20px
 $bottom-text: 0.8rem; //12px
+$bottom-text-small: 1.0rem;
 $footer-padding-lg: 3rem 6.250rem;
 
 @mixin box($bg-color) {
@@ -93,6 +94,10 @@ $footer-padding-lg: 3rem 6.250rem;
     width: 100%;
     font-size: $bottom-text;
     text-transform: uppercase;
+
+    @include sm {
+      font-size: $bottom-text-small;
+    }
 
     .wrapper {
       @include box($dark-blue);

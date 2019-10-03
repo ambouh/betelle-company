@@ -7,7 +7,8 @@ $body-text-color: #2d4b68;
 $jumbotron-mark-bg: #063252;
 $h1: 2.5rem; //40px
 $footer-height: 38em;
-$footer-height-small: 50em;
+$footer-height-small: 66rem;
+$footer-height-extra-small: 70rem;
 $wrapper-padding: 0 6.25rem;
 $wrapper-padding-sm: 0 3rem;
 
@@ -34,6 +35,10 @@ body {
   }
   color: $body-text-color;
   height: 100%;
+
+  @include sm {
+    hyphens: auto;
+  }
 }
 h1{
   font:{
@@ -61,6 +66,10 @@ p {
 
   @include sm {
     padding-bottom: $footer-height-small;
+  }
+
+  @include rwd(400) {
+    padding-bottom: $footer-height-extra-small;
   }
 }
 

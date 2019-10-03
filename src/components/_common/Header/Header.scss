@@ -1,3 +1,4 @@
+@import "../../../styles/media";
 @import url(https://fonts.googleapis.com/css?family=Lusitana);
 
 $bp-small: 500px;
@@ -50,6 +51,11 @@ button.menu-toggle{
   height: 30px;
   outline: none;
   transition: opacity 0.2s ease-out;
+
+  @include sm {
+    left: 80%;
+  }
+
   &:before {
     content: "";
     @include position-center;
