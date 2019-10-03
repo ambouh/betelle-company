@@ -38,16 +38,19 @@ class Accordion extends Component {
         } = this;
 
         return (
-            <div style={{ borderTop: '2px solid #2b8ec8', borderBottom: '2px solid #2b8ec8'}}>
-                {children.map(child => (
+            <div >
+                {children.map((child, index, array) => (
+
                     <AccordionSection
                         isOpen={!!openSections[child.props.label]}
                         label={child.props.label}
                         onClick={onClick}
+                        key={index}
+                        sectionStyle={ (children.length -1 === index)? 'accordionWrapperStyleLast' : 'accordionWrapperStyle'}
                     >
                         {child.props.children}
                     </AccordionSection>
-                ))}
+                    ))}
             </div>
         );
     }

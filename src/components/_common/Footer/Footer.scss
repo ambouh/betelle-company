@@ -1,3 +1,4 @@
+@import "../../../styles/media";
 $sky-blue: #2b8ec8;
 $dark-blue: #192d40;//#375571;
 $white: #fff;
@@ -35,12 +36,21 @@ $footer-padding-lg: 3rem 6.250rem;
   color: $footer-text-color;
   font-size: 1.25rem;
 
+
+
   &-top {
     width: 100%;
     background: $sky-blue;
 
     .wrapper {
       @include box($sky-blue);
+
+      @include sm {
+        @include box($sky-blue);
+        justify-content: left;
+        flex-direction: column;
+        padding: 3rem;
+      }
 
       ul {
         list-style: none;
@@ -49,6 +59,9 @@ $footer-padding-lg: 3rem 6.250rem;
           bottom: 0;
           left: 1rem;
           right: 0;
+        }
+        @include sm {
+          margin-left: 0;
         }
         padding: 0;
 
@@ -64,9 +77,15 @@ $footer-padding-lg: 3rem 6.250rem;
 
         li {
           margin-bottom: 2.5rem;
+
+          @include sm {
+            margin-bottom: 1.5rem;
+          }
         }
       }
     }
+
+
   }
 
   &-bottom {
@@ -77,6 +96,11 @@ $footer-padding-lg: 3rem 6.250rem;
 
     .wrapper {
       @include box($dark-blue);
+      @include sm {
+        justify-content: normal;
+        flex-direction: column;
+        padding: 3rem;
+      }
       ul {
         margin: 0;
 
@@ -87,6 +111,12 @@ $footer-padding-lg: 3rem 6.250rem;
         li {
           display: inline;
           margin-right: 6.250rem;
+
+          @include sm {
+            display: block;
+            margin-right: 0;
+           margin-bottom: 10px;
+          }
 
           a {
             text-decoration: none;
@@ -100,10 +130,17 @@ $footer-padding-lg: 3rem 6.250rem;
   &-content {
     h1 {
       margin-bottom: 2.0rem;
+      @include sm {
+        margin-bottom: 1rem;
+      }
     }
 
     p {
       margin-bottom: 6.0rem;
+
+      @include sm {
+        margin-bottom: 3rem;
+      }
     }
 
   }
@@ -111,9 +148,18 @@ $footer-padding-lg: 3rem 6.250rem;
   &-contact {
     width: 18rem;
 
+    @include sm {
+      width: 100%;
+    }
+
     h1 {
       margin-bottom: 2.0rem;
+
+      @include sm {
+        margin-bottom: 1rem;
+      }
     }
   }
 
 }
+

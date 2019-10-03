@@ -7,24 +7,13 @@ class AccordionSection extends Component {
         isOpen: PropTypes.bool.isRequired,
         label: PropTypes.string.isRequired,
         onClick: PropTypes.func.isRequired,
+        sectionStyle: PropTypes.string.isRequired
     };
 
     onClick = () => {
         this.props.onClick(this.props.label);
     };
 
-    labelStyle = {
-        fontSize: '22px',
-        textTransform: 'uppercase',
-        fontWeight: 'bold',
-        cursor: 'pointer',
-    };
-
-    accordionWrapperStyle = {
-        background: 'transparent',
-        borderBottom: '1px solid #2b8ec8',
-        padding: '40px 20px'
-    };
 
     iconStyle = {
         fontSize: '35px',
@@ -50,9 +39,9 @@ class AccordionSection extends Component {
 
         return (
             <div
-                style={this.accordionWrapperStyle}
+                className={this.props.sectionStyle}
             >
-                <div onClick={onClick} style={this.labelStyle}>
+                <div onClick={onClick} className={'labelStyle'}>
                     {label}
                     <div style={this.iconStyle}>
                         {!isOpen && <span>+</span>}

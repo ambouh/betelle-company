@@ -7,15 +7,11 @@ import {Link} from 'react-router-dom';
 class JumbotronContent extends Component {
     jumbotronStyle = {
         backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top right",
-        backgroundSize: "contain",
-        paddingTop: "150px"
-    }
+    };
 
     render() {
         return (
-            <div className={"wrapper"} style={this.jumbotronStyle}>
+            <div className={"wrapper jumbotronBG"} style={this.jumbotronStyle}>
             <div className={"jumbotronContent"} >
 
                     <div className={"text1"}>

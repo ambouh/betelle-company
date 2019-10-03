@@ -1,3 +1,5 @@
+@import "../../styles/media";
+
 $jumbotron-mark-bg: #192d40; //#063252;
 $wrapper-padding: 6.25rem;
 $emphasis-text1: #2b8ec8;
@@ -5,26 +7,63 @@ $mission-bg: $emphasis-text1;
 $mission-line: #375571;
 $span-right-emphasis: #98c7f3;
 $mission-services-h1:  3.125em;
+$mission-services-h1-small: 2.0em;
+
 .jumbotron {
   background: rgb(202,202,202);
   background: #1a3b4a;
   //background: linear-gradient(90deg, rgba(202,202,202,1) 0%, rgba(26,59,74,1) 44%);
+}
 
+div.jumbotronBG {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  padding-top: 150px;
+
+  @include sm {
+    background-size: cover;
+    height: 100vh;
+    padding-top: 0;
+    background-position: top left;
+  }
 }
 .jumbotronContent {
   padding-top: 8rem;
   padding-bottom: 8rem;
   display: flex;
   align-content: space-between;
+
+  @include sm {
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+  }
+
 }
 
 div.text1 {
 
+  @include sm {
+    margin-top: 50%;
+  }
 }
 h1.text1 {
   font-size: 4.875rem;
   font-weight: bold;
   color: white;
+
+  @include rwd(1200) {
+    font-size: 4rem;
+  }
+
+  @include sm {
+    font-size: 3rem;
+  }
+
+
 
 
 }
@@ -33,6 +72,10 @@ h1.text1 mark {
   color: #fff;
   padding: 0 15px 10px 0rem;
   box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
+
+  @include sm {
+
+  }
 }
 
 
@@ -44,19 +87,25 @@ span.space {
 span.emphasis-text1 {
   color: $emphasis-text1;
 }
+.text2 {
+  p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 1.0em;
+  }
 
-.text2 p {
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  margin-left: 1.0em;
-}
+  span {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: #2b8ec8;
+    clear: right;
+  }
 
-.text2 span {
-  display: inline-block;
-  text-decoration: underline;
-  text-decoration-color: #2b8ec8;
-  clear: right;
+  @include sm {
+    display: none;
+  }
+
 }
 
 a.contact-btn {
@@ -74,6 +123,13 @@ a.contact-btn {
   min-width: 220px;
   text-align: center;
   box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
+
+  @include sm {
+    font-size: 1.5rem;
+    min-width: 85px;
+    padding: 1.5rem 0.5rem;
+    width: 185px;
+  }
 }
 
 .mission {
@@ -83,8 +139,8 @@ a.contact-btn {
   padding: 3.0em 0 0 0;
   max-height: 700px;
   border-top: 1px solid #fff;
-
   div.wrapper {
+
     display: flex;
     .left {
       line-height: 40px;
@@ -131,10 +187,26 @@ a.contact-btn {
       }
     }
   }
+
+  @include sm {
+    max-height: none;
+    padding: 2.0em 0;
+    div.wrapper {
+      .left h1{
+        font-size: $mission-services-h1-small;
+        line-height: 38px;
+      }
+      .right {
+        display: none;
+      }
+      .left p {
+        margin: 30px 0;
+      }
+    }
+  }
 }
 
 .services {
-  padding: 20px 0px 0px;
   .wrapper{
     padding: 5.0em 0 3.0em;
     h1 {
@@ -143,6 +215,15 @@ a.contact-btn {
       color: $emphasis-text1;
       text-align: center;
       margin-bottom: 30px;
+    }
+    .accordionWrapperStyle {
+      background: transparent;
+      border-bottom: 1px solid $emphasis-text1;
+      padding: 40px 20px;
+    }
+    .accordionWrapperStyleLast {
+      background: transparent;
+      padding: 40px 20px;
     }
     .content {
       display: flex;
@@ -156,7 +237,62 @@ a.contact-btn {
         //padding: 20px;
         width: 450px;
         //border: 1px solid greenyellow;
+
+        .labelStyle {
+          font-size: 22px;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+        }
       }
     }
+  }
+
+  @include sm {
+    .wrapper {
+      padding: 2.0em 3.0em;
+
+
+      h1 {
+        font-size: $mission-services-h1-small;
+        line-height: 50px;
+        color: $emphasis-text1;
+        text-align: left;
+        margin-bottom: 0;
+      }
+      .content {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+
+        .left{
+          display: none;
+        }
+        .right{
+          width: 100%;
+
+          .labelStyle {
+            font-size: 1.25em;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .accordionWrapperStyle {
+        background: transparent;
+        border-bottom: 1px solid $emphasis-text1;
+        padding: 40px 0px;
+      }
+      .accordionWrapperStyleLast {
+        background: transparent;
+        padding: 40px 0px;
+      }
+    }
+
+
+
+
   }
 }
