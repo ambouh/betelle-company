@@ -11,6 +11,7 @@ $footer-height-small: 66rem;
 $footer-height-extra-small: 70rem;
 $wrapper-padding: 0 6.25rem;
 $wrapper-padding-sm: 0 3rem;
+$wrapper-padding-md: 0 2rem;
 
 .wrapper{
   max-width: 82rem;
@@ -19,6 +20,10 @@ $wrapper-padding-sm: 0 3rem;
 
   @include sm{
     padding: $wrapper-padding-sm;
+  }
+
+  @include md {
+    padding: $wrapper-padding-md;
   }
 }
 
@@ -70,6 +75,10 @@ p {
 
   @include rwd(400) {
     padding-bottom: $footer-height-extra-small;
+  }
+
+  @include rwd(300) {
+    padding-bottom: 100rem;
   }
 }
 

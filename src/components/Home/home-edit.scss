@@ -17,19 +17,15 @@ $mission-services-h1-small: 2.0em;
 
 div.jumbotronBG {
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
   padding-top: 150px;
-  background-size: cover;
-  background-position: 50px top;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   @include md {
     background-size: cover;
-
+    height: 100vh;
     padding-top: 0;
-
+    background-position: top left;
   }
 }
 .jumbotronContent {
@@ -41,7 +37,7 @@ div.jumbotronBG {
   @include sm {
     padding-top: 0;
     padding-bottom: 0;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     height: inherit;
   }
@@ -49,17 +45,14 @@ div.jumbotronBG {
   @include md {
     padding-top: 15rem;
     padding-bottom: 8rem;
-    flex-direction: column-reverse;
-    justify-content: center;
-    height: inherit;
   }
 
 }
 
 div.text1 {
 
-  @include md {
-    margin-top: 2rem;
+  @include sm {
+    margin-top: 50%;
   }
 }
 h1.text1 {
@@ -68,12 +61,18 @@ h1.text1 {
   color: white;
 
   @include rwd(1200) {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   @include sm {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
+
+  @include md {
+    font-size: 2.3rem;
+  }
+
+
 }
 h1.text1 mark {
   background: $jumbotron-mark-bg;
@@ -103,8 +102,7 @@ span.emphasis-text1 {
     margin-left: 1.0em;
 
     @include md {
-      font-size: 2rem;
-      margin-left: 0;
+      font-size: 1.5rem;
     }
   }
 
@@ -113,6 +111,10 @@ span.emphasis-text1 {
     text-decoration: underline;
     text-decoration-color: #2b8ec8;
     clear: right;
+  }
+
+  @include sm {
+    display: none;
   }
 
 }
@@ -133,7 +135,7 @@ a.contact-btn {
   text-align: center;
   box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
 
-  @include md {
+  @include sm {
     font-size: 1.5rem;
     min-width: 85px;
     padding: 1.5rem 0.5rem;
@@ -145,7 +147,7 @@ a.contact-btn {
   background: $mission-bg;
   color: #fff;
   font-size: 1.25rem;
-  padding: 2.0em 0 0 0;
+  padding: 3.0em 0 0 0;
   max-height: 700px;
   border-top: 1px solid #fff;
   div.wrapper {
@@ -197,46 +199,7 @@ a.contact-btn {
     }
   }
 
-
-  @include rwd(1120) {
-    max-height: none;
-    padding-bottom: 2rem;
-    div.wrapper {
-      padding: 0 2rem;
-      align-items: center;
-      justify-content: center;
-
-      .left {
-        h1 {
-          font-size: 2.5em;
-        }
-      }
-      .right {
-        img {
-          width: 400px;
-        }
-      }
-    }
-  }
-
-  @include rwd(940) {
-    padding: 2em 0 0 0;
-    div.wrapper {
-      padding: 0 2rem;
-      flex-direction: column;
-      .left {
-        p {
-          margin: 30px 30px 0 0;
-        }
-      }
-      .right {
-          position: relative;
-          top: 50px;
-        font-size: 2.3rem;
-      }
-    }
-  }
-  @include md {
+  @include sm {
     max-height: none;
     padding: 2.0em 0;
     div.wrapper {
@@ -296,7 +259,7 @@ a.contact-btn {
     }
   }
 
-  @include md {
+  @include sm {
     .wrapper {
       padding: 2.0em 3.0em;
 
