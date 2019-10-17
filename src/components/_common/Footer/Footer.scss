@@ -138,8 +138,12 @@ $footer-padding-lg: 3rem 6.250rem;
   &-content {
     h1 {
       margin-bottom: 2.0rem;
+      @include lg {
+        font-size: 1.8em;
+      }
       @include sm {
         margin-bottom: 1rem;
+        font-size: 1.8em;
       }
     }
 
@@ -163,13 +167,18 @@ $footer-padding-lg: 3rem 6.250rem;
     }
     @include sm {
       width: 100%;
+      margin-left: 0rem;
     }
 
     h1 {
       margin-bottom: 2.0rem;
 
+      @include lg {
+        font-size: 1.8em;
+      }
       @include sm {
         margin-bottom: 1rem;
+        font-size: 1.8em;
       }
     }
   }
