@@ -28,8 +28,6 @@ $footer-padding-lg: 3rem 6.250rem;
 
 }
 
-
-
 .footer {
   width: 100%;
   position: absolute;
@@ -45,7 +43,9 @@ $footer-padding-lg: 3rem 6.250rem;
 
     .wrapper {
       @include box($sky-blue);
-
+      @include lg {
+        padding: 2rem 3rem 0 3rem;
+      }
       @include sm {
         @include box($sky-blue);
         justify-content: left;
@@ -101,10 +101,13 @@ $footer-padding-lg: 3rem 6.250rem;
 
     .wrapper {
       @include box($dark-blue);
+      @include lg {
+        padding: 3rem;
+      }
       @include sm {
         justify-content: normal;
         flex-direction: column;
-        padding: 3rem;
+        padding: 2rem 3rem;
       }
       ul {
         margin: 0;
@@ -143,6 +146,9 @@ $footer-padding-lg: 3rem 6.250rem;
     p {
       margin-bottom: 6.0rem;
 
+      @include lg {
+        margin-bottom: 3.0rem;
+      }
       @include sm {
         margin-bottom: 3rem;
       }
@@ -152,7 +158,9 @@ $footer-padding-lg: 3rem 6.250rem;
 
   &-contact {
     width: 18rem;
-
+    @include lg {
+      margin-left: 1rem;
+    }
     @include sm {
       width: 100%;
     }

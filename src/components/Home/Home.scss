@@ -18,8 +18,8 @@ $mission-services-h1-small: 2.0em;
 div.jumbotronBG {
   background-repeat: no-repeat;
   padding-top: 150px;
-  background-size: cover;
-  background-position: 50px top;
+  background-size: contain;
+  background-position: right top;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -71,8 +71,8 @@ h1.text1 {
     font-size: 3.5rem;
   }
 
-  @include sm {
-    font-size: 3.0rem;
+  @include md {
+    font-size: 2.0rem;
   }
 }
 h1.text1 mark {
@@ -81,9 +81,6 @@ h1.text1 mark {
   padding: 0 15px 10px 0rem;
   box-shadow: 2px 2px 4px -1px rgba(0,0,0,0.39);
 
-  @include sm {
-
-  }
 }
 
 
@@ -103,9 +100,10 @@ span.emphasis-text1 {
     margin-left: 1.0em;
 
     @include md {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-left: 0;
     }
+
   }
 
   span {
@@ -280,6 +278,10 @@ a.contact-btn {
       justify-content: center;
       .left{
         margin: 20px;
+
+        svg.gear_wheels {
+          width: 400px;
+        }
       }
       .right{
         //padding: 20px;
@@ -295,7 +297,16 @@ a.contact-btn {
       }
     }
   }
-
+  @include  lg {
+    .wrapper .content .left{
+      svg.gear_wheels {
+        width: 350px;
+      }
+    }
+    .right{
+      margin-right: 1.5rem;
+    }
+  }
   @include md {
     .wrapper {
       padding: 2.0em 3.0em;
