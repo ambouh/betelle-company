@@ -57,6 +57,11 @@ div.jumbotronBG {
     height: inherit;
   }
 
+  @include rwd(1129) {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
+
 }
 
 div.text1 {
@@ -76,6 +81,15 @@ h1.text1 {
 
   @include md {
     font-size: 2.0rem;
+  }
+
+  @include lg {
+    //Font-size: 2.4em
+    font-size: 2.4em;
+  }
+
+  @include rwd(1129) {
+    font-size: 3.0em;
   }
 }
 h1.text1 mark {
@@ -107,6 +121,14 @@ span.emphasis-text1 {
       margin-left: 0;
     }
 
+    @include lg {
+      //Font-size: 1.4em
+      font-size: 1.4em;
+    }
+
+    @include rwd(1129) {
+      font-size: 1.8em;
+    }
   }
 
   span {
@@ -140,6 +162,14 @@ a.contact-btn {
     padding: 1.5rem 0.5rem;
     width: 185px;
   }
+
+  @include lg {
+    //Font-size: 1.4em | padding: 1.0em 0 | min-width: 180px |
+    font-size: 1.4em;
+    padding: 1.0em 0;
+    min-width: 180px;
+  }
+
 }
 
 .mission {
