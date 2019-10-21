@@ -12,7 +12,7 @@ $footer-height-extra-small: 70rem;
 $wrapper-padding: 0 6.25rem;
 $wrapper-padding-sm: 0 3rem;
 $wrapper-padding-md: 0 2rem;
-
+$container-bg: #f1f5f8;
 .wrapper{
   max-width: 82rem;
   margin: 0 auto;
@@ -68,7 +68,7 @@ p {
   display: block;
   position: relative;
   padding-bottom: $footer-height; //preserves footer by keeping it at the bottom w/o having a gap
-
+  background: $container-bg;
   @include sm {
     padding-bottom: $footer-height-small;
   }

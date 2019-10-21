@@ -58,7 +58,7 @@ const Default = (props) => {
     </div> */        },
 
         <div className={"defaultTpl"}>
-            <div className={""}>
+            <div className={"wrapper"}>
             <h1 className={""}>{props.title}</h1>
                <p>
                    At Betelle, helping businesses is fulfilling work. Quis ipsum suspendisse ultrices

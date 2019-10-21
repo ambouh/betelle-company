@@ -12,6 +12,17 @@ $border-style: linear-gradient(to right, #fff 80px, rgba(0,0,0,0) 5%);
     font-size: 250px;
     line-height: 190px;
     margin-bottom: 4rem;
+
+    @include lg {
+      font-size: 9.0rem;
+      line-height: 0.7em;
+      margin-top: 2rem;
+    }
+    @include sm {
+      font-size: 106px;
+      line-height: 93px;
+      margin-top: 2.5rem;
+    }
   }
   p {
     color: #fff;
@@ -25,6 +36,16 @@ $border-style: linear-gradient(to right, #fff 80px, rgba(0,0,0,0) 5%);
     border-bottom: none;
     border-image: $border-style;
     border-image-slice: 1 1 1 1;
+
+    @include lg {
+      margin: 0 0 0 2rem;
+      padding: 2rem 2rem 0.0rem;
+    }
+    @include sm{
+      margin: 0;
+      padding: 1em;
+      font-size: 23px;
+    }
   }
 }
 
