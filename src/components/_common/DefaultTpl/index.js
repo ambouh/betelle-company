@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './DefaultTpl.scss';
 
 const Default = (props) => {
     let h1 = {
@@ -44,14 +45,29 @@ const Default = (props) => {
     };
 
     return (
-        <div style={wrapper}>
+        {/*
+    <div style={wrapper}>
 
-            <div className={"wrapper"}>
-                <h1 style={h1}>{props.title}</h1>
-                <p style={paragraph}>At Betelle, helping businesses is fulfilling work. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <p style={construction}>{props.title} component is under construction</p>
+        <div className={"wrapper"}>
+            <h1 style={h1}>{props.title}</h1>
+            <p style={paragraph}>At Betelle, helping businesses is fulfilling work. Quis ipsum suspendisse ultrices
+                gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p style={construction}>{props.title} component is under construction</p>
+        </div>
+    </div> */        },
+
+        <div className={"defaultTpl"}>
+            <div className={""}>
+            <h1 className={""}>{props.title}</h1>
+               <p>
+                   At Betelle, helping businesses is fulfilling work. Quis ipsum suspendisse ultrices
+                gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <section style={construction}>{props.title} component is under construction</section>
             </div>
         </div>
+
     );
 };
 

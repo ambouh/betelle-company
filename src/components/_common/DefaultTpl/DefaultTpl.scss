@@ -1,0 +1,31 @@
+@import "../../../styles/media";
+
+$border-style: linear-gradient(to right, #fff 80px, rgba(0,0,0,0) 5%);
+.defaultTpl {
+  display: flex;
+  flex-direction: column;
+  background: #192d40;
+  padding-bottom: 5.625rem;
+
+  h1 {
+    color: #6d8094;
+    font-size: 250px;
+    line-height: 190px;
+    margin-bottom: 4rem;
+  }
+  p {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0 0 10rem;
+    padding: 2rem 3rem 0;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px 0 0 0;
+    border-right: none;
+    border-bottom: none;
+    border-image: $border-style;
+    border-image-slice: 1 1 1 1;
+  }
+}
+
+
