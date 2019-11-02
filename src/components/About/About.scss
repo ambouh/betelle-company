@@ -1,3 +1,5 @@
+@import "../../styles/media";
+
 $mission-bg: #2b8ec8;
 $value-txt: #2c4c68;
 .about {
@@ -25,6 +27,11 @@ $value-txt: #2c4c68;
       padding: 5.000rem 0 3rem;
       font-size: 3.125em;
       line-height: 50px;
+
+      @include md {
+        font-size: 2.5rem;
+        padding: 3rem 0;
+      }
     }
 
     p {
@@ -36,6 +43,15 @@ $value-txt: #2c4c68;
       .emphasis {
         font-weight: bold;
         display: block;
+
+        @include md {
+          text-align: center;
+          font-size: larger;
+        }
+      }
+
+      @include md {
+        column-count: 1;
       }
     }
   }
@@ -66,6 +82,10 @@ $value-txt: #2c4c68;
         line-height: 50px;
         color: $mission-bg;
         margin: 2rem 0 0 4.5rem;
+
+        @include sm {
+          font-size: 2.5em;
+        }
       }
       h1:after {
         content: " ";

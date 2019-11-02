@@ -17,3 +17,5 @@ gulpfile.js
 package-lock.json
 
 build/
+
+.gitignore.

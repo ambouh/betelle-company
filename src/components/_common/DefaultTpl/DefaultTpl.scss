@@ -13,16 +13,29 @@ $border-style: linear-gradient(to right, #fff 80px, rgba(0,0,0,0) 5%);
     line-height: 190px;
     margin-bottom: 4rem;
 
+    @include rwd(1150) {
+      font-size: 13.0rem;
+    }
+
+    @include rwd(880) {
+      font-size: 9.0rem;
+    }
     @include lg {
       font-size: 9.0rem;
       line-height: 0.7em;
       margin-top: 2rem;
     }
+
     @include sm {
-      font-size: 106px;
+      font-size: 5.0em;
       line-height: 93px;
       margin-top: 2.5rem;
     }
+
+    @include rwd(400) {
+      font-size: 77px;
+    }
+
   }
   p {
     color: #fff;
@@ -36,6 +49,9 @@ $border-style: linear-gradient(to right, #fff 80px, rgba(0,0,0,0) 5%);
     border-bottom: none;
     border-image: $border-style;
     border-image-slice: 1 1 1 1;
+    @include rwd(1150) {
+      margin: 0 0 0 3rem;
+    }
 
     @include lg {
       margin: 0 0 0 2rem;
