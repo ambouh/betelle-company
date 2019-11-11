@@ -83,6 +83,7 @@ button.menu-toggle{
     font-size: 76px;
     line-height: 0;
     transition: opacity 0.4s ease-out;
+
   }
   &:active {
     transform: translateY(2px);
@@ -154,6 +155,10 @@ ul.menu {
     padding: 6px 20px;
     font-size: 48px;
     font-weight: 400;
+
+    @include sm {
+      font-size: 1.5em;
+    }
     a {
       color: white;
       text-decoration: none;

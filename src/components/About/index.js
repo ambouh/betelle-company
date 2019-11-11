@@ -18,7 +18,7 @@ class About extends Component {
                 <div className={"wrapper"}>
                     <ValueDefinition/>
                     <div className={"separator"}></div>
-                    <ValueCategory/>
+                   <ValueCategory/>
                 </div>
             </div>
         );
