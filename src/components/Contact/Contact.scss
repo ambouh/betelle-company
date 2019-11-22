@@ -34,7 +34,9 @@ $emphasis-text1: #2b8ec8;
     display: flex;
     background: #fff;
     flex-direction: column;
-
+    @include xl {
+      width: 550px;
+    }
     @include sm {
       width: 27rem;
     }

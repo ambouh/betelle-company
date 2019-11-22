@@ -1,45 +1,34 @@
 import React, {Component} from 'react';
-import pic1 from "../../images/pic1.png";
-import pic2 from "../../images/pic2.png";
-import pic3 from "../../images/pic3.png";
+import pic1 from "../../images/picture1.png";
+import pic2 from "../../images/picture2.png";
+import pic3 from "../../images/picture3.png";
+import underline from "../../images/values-border.png";
+
 const ValueDefinition = () => {
-    const temp1Style = {
-        'background': '#999',
-        'width' : '233px',
-        'height' : '237px',
-        'position':'relative',
-        'top':'80px'
-    };
-
-    const temp2Style = {
-        'background': '#666',
-        'width' : '219px',
-        'height' : '283px',
-        'position':'relative',
-        'top':'-115px',
-        'left': '13px'
-    };
-
-    const temp3Style = {
-        'background': '#afafaf',
-        'width' : '365px',
-        'height' : '439px',
-        'boxShadow':'2px 2px 4px -1px rgba(0, 0, 0, 0.39)'
-    };
-
-
     return (
-        <div className={"aboutValueDfn columns-span-2"}>
-            <div className={"equal"}>
-                <div className={"img-collage"}>
-                    <img style={temp1Style} src={pic2}/>
-                    <img style={temp3Style} src={pic3}/>
-                    <img style={temp2Style} src={pic1}/>
-                    <h1>Our Values</h1>
-                </div>
+        <div className={"aboutValueDfn row"}>
+              <div className={"image-collage"}>
+                    <div className={"row"}>
+                        <div className={"col1"}>
+                            <div className={"div1"}>
+                                <img className={"pic1"} src={pic1}/>
+                            </div>
+                            <div className={"div3"}>
+                                <img className={"pic3"} src={pic3}/>
+                            </div>
+                        </div>
+                        <div className={"col2"}>
+                            <div className={"div2"}>
+                                <img className={"pic2"} src={pic2}/>
+                            </div>
 
-            </div>
-            <div className={"equal"}>
+                            <h1 className={"ourValues_lg"}>Our Values
+                                <img src={underline} alt={"Our Values"}/>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+              <div className={"value-section"}>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

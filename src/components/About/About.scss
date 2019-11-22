@@ -7,13 +7,6 @@ $value-txt: #2c4c68;
   line-height: 50px;
   background: #f1f5f8;
   padding-bottom: 5rem;
-  .columns-span-2 {
-    display: flex;
-    flex-direction: row;
-  }
-  .equal {
-    flex: 1;
-  }
 
 
   .aboutMission {
@@ -40,6 +33,7 @@ $value-txt: #2c4c68;
       column-gap: 100px;
       column-rule-width: 1px;
       padding-bottom: 9rem;
+
       .emphasis {
         font-weight: bold;
         display: block;
@@ -55,54 +49,101 @@ $value-txt: #2c4c68;
       }
     }
   }
+
   .separator {
     background: url("../../../src/images/seperator.png") no-repeat;
     width: 351px;
     height: 5px;
-    margin: 0 auto;
-    position: relative;
-    top: -50px;
+    margin: 2em auto;
   }
+
   .aboutValueDfn {
-    .img-collage {
-      display: flex;
-      width: 620px;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include lg {
+      flex-direction: column;
+    }
+    .image-collage {
+      flex: 45%;
       position: relative;
-      left: -2rem;
-      top: -4rem;
-      text-align: center;
+      margin-top: -5em;
+      margin-bottom: 5rem;
 
-      img {
-        margin: 0 4px ;
-      }
+      .row {
+        display: flex;
+        .col {
+          &1 {
+            width: 40%;
+            padding: 0 10px 0 0;
+          }
 
-      h1 {
-        font-size: 3.125em;
-        line-height: 50px;
-        color: $mission-bg;
-        margin: 2rem 0 0 4.5rem;
+          &2 {
+            width: 60%;
+            text-align: center;
+            padding: 0 10px 0 0;
+          }
+        }
 
-        @include sm {
-          font-size: 2.5em;
+        .div {
+          &1 {
+            margin-top: 25%;
+            width: 100%;
+            height: 0;
+            margin-bottom: 107%;
+          }
+
+          &2 {
+            width: 100%;
+          }
+
+          &3 {
+            width: 90%;
+            float: right;
+
+            @include lg {
+              margin-bottom: 2rem;
+            }
+
+            @include sm {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .pic {
+          &1 {
+            width: 100%;
+          }
+
+          &2 {
+            width: 100%;
+          }
+
+          &3 {
+            width: 100%;
+          }
         }
       }
-      h1:after {
-        content: " ";
-        background: url("../../../src/images/values-border.png") no-repeat;
-        display: block;
-        width: 250px;
-        height: 50px;
-        margin: 10px auto 0;
-      }
-
     }
-    p {
-      position: relative;
-      top: 15rem;
+
+    .value-section {
+      flex: 40%;
+
+
+      p {
+        margin: 40% 1.5rem 0rem;
+
+        @include lg {
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
     }
   }
-  .aboutValueCtg{
+
+
+  .aboutValueCtg {
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -111,6 +152,11 @@ $value-txt: #2c4c68;
     margin: 0 auto;
     padding: 3rem;
 
+    @include md {
+      padding: 2rem;
+      width: 100%;
+    }
+
     ul {
       list-style: none;
       margin: 0;
@@ -118,30 +164,79 @@ $value-txt: #2c4c68;
       display: flex;
       justify-content: right;
       align-items: center;
+
+      @include sm {
+        flex-direction: column;
+      }
     }
+
     li {
       margin: 10px 25px;
       width: 15rem;
     }
+
     .title {
       display: block;
       text-transform: uppercase;
       color: $value-txt;
       font-weight: bold;
       text-align: right;
+
+      @include sm {
+        text-align: center;
+      }
     }
-    /*span:after {
-      content: " ";
-      display: block;
-      width: 50px;
-      height: 1px;
-      border-bottom: 1px solid $mission-bg;
-      position: relative;
-      float: right;
-      margin-right: 20px;
-    }*/
+
     li:nth-child(2) {
       width: 30rem;
+
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+
+  h1.ourValues_sm {
+    font-size: 3.125em;
+    line-height: 50px;
+    color: $mission-bg;
+    margin: 2rem 0 0 4.5rem;
+    display: none;
+
+    @include md {
+      display: block;
+      width: 300px;
+      margin: 0rem auto 2rem;
+    }
+
+    @include sm {
+      font-size: 2.5em;
+      width: 230px;
+      margin: 0rem auto 2rem;
+    }
+
+    img {
+      margin-top: 0.8rem;
+    }
+  }
+
+  h1.ourValues_lg {
+    font-size: 3rem;
+    line-height: 50px;
+    color: $mission-bg;
+    margin: 1rem auto;
+    width: 5em;
+
+    @include sm {
+      font-size: 2.0em;
+    }
+    img {
+      margin-top: 0.3rem;
+
+      @include sm{
+        margin-top: 0;
+        width: 75%;
+      }
     }
   }
 }
