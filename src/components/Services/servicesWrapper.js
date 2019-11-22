@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Tabs from './Tabs';
 import Web from "./_services/web";
+import CarouselPage from "./CarouselPage";
 
 class ServicesWrapper extends Component {
 
@@ -10,7 +11,9 @@ class ServicesWrapper extends Component {
             <section className={"servicesContainer"}>
                 <div className={"wrapper"}>
                     <div className={"content"}>
-                        <Tabs>
+                        <CarouselPage/>
+                        {/*
+                                              <Tabs>
                             <div label={"Web Development"}>
                                 <Web title={"web development"}/>
                             </div>
@@ -24,6 +27,7 @@ class ServicesWrapper extends Component {
                                 <Web title={"security"}/>
                             </div>
                         </Tabs>
+                        */}
                     </div>
                 </div>
             </section>
