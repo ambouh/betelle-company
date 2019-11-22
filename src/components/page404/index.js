@@ -8,7 +8,7 @@ class page404 extends Component {
 
     render(){
         return (
-            <Default title={"PAGE 404: NOT FOUND"}/>
+            <Default title={"PAGE 404"}/>
         );
     }
 }
