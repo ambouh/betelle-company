@@ -7,4 +7,5 @@ const CarouselSlot = styled.div`
     order: ${(props) => props.order };
 `;
 
+
 export default CarouselSlot;

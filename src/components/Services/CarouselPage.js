@@ -17,10 +17,10 @@ class CarouselPage extends Component {
                <Carousel
                 title={"Carousel"}
                >
-                   <Item>Item</Item>
-                   <Item>Item</Item>
-                   <Item>Item</Item>
-                   <Item>Item</Item>
+                   <Item>Item 1</Item>
+                   <Item>Item 2</Item>
+                   <Item>Item 3 </Item>
+                   <Item>Item 4</Item>
                </Carousel>
            </div>
        )

@@ -8,7 +8,8 @@ class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            position: 0
+            position: 0,
+            sliding: false
         }
     }
     static propTypes = {
@@ -28,24 +29,51 @@ class Carousel extends Component {
         return itemIndex - position; //returns the place an item SHOULD appear in
     }
 
+    nextSlide = () => {
+        const { position } = this.state;
+        const { children } = this.props;
+        const numItems = children.length || 1;
+
+        this.setState({
+            position: (position === numItems - 1)? 0: (position + 1)
+        });
+    };
+
+    doSliding = (position) => {
+      this.setState({
+          sliding: true,
+          position
+      });
+
+      setTimeout(() =>{
+          this.setState({
+              sliding: false
+          });
+      }, 50)
+    };
+
+
     render(){
         const {title, children} = this.props;
+        const {sliding} = this.state;
 
         return (
             <div>
                 <h2>{ title }</h2>
                 <Wrapper>
-                    <CarouselContainer>
+                    <CarouselContainer sliding={sliding}>
                         {children.map((child, index)=> (
                             <CarouselSlot
                                 key= { index }
-                                order = { this.getOrder(index) }
+                                order={ this.getOrder(index) }
                             >
                                 {child}
                             </CarouselSlot>
                             )
                         )}
+
                     </CarouselContainer>
+                    <button onClick={ () => this.nextSlide() }>Next</button>
                 </Wrapper>
             </div>
         )
