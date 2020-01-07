@@ -9,6 +9,7 @@ class Carousel extends Component {
         super(props);
         this.state = {
             position: 0,
+            direction: 'next',
             sliding: false
         }
     }
@@ -34,15 +35,22 @@ class Carousel extends Component {
         const { children } = this.props;
         const numItems = children.length || 1;
 
-        this.setState({
-            position: (position === numItems - 1)? 0: (position + 1)
-        });
+        this.doSliding('next',(position === numItems - 1)? 0: (position + 1))
     };
 
-    doSliding = (position) => {
+    prevSlide = () => {
+        const { position } = this.state
+        const { children } = this.props
+        const numItems = children.length
+        this.doSliding('prev', position === 0 ? numItems - 1 : position - 1)
+    }
+
+    doSliding = (direction, position) => {
       this.setState({
           sliding: true,
+          direction: direction,
           position
+
       });
 
       setTimeout(() =>{
@@ -55,13 +63,13 @@ class Carousel extends Component {
 
     render(){
         const {title, children} = this.props;
-        const {sliding} = this.state;
+        const {sliding, position, direction} = this.state;
 
         return (
             <div>
                 <h2>{ title }</h2>
                 <Wrapper>
-                    <CarouselContainer sliding={sliding}>
+                    <CarouselContainer sliding={sliding} position={position} direction={direction}>
                         {children.map((child, index)=> (
                             <CarouselSlot
                                 key= { index }
@@ -73,6 +81,7 @@ class Carousel extends Component {
                         )}
 
                     </CarouselContainer>
+                    <button onClick={ () => this.prevSlide() }>Previous</button>
                     <button onClick={ () => this.nextSlide() }>Next</button>
                 </Wrapper>
             </div>

@@ -4,10 +4,15 @@ import styled from 'styled-components';
 import Carousel from './_carousel/Carousel';
 
 const Item = styled.div`
-background: darkorange;
-text-align: center;
-padding: 50px;
-color: white;
+    background: #2b8ec8;
+    text-align: center;
+    color: white;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 `;
 
 class CarouselPage extends Component {
@@ -17,10 +22,11 @@ class CarouselPage extends Component {
                <Carousel
                 title={"Carousel"}
                >
-                   <Item>Item 1</Item>
-                   <Item>Item 2</Item>
-                   <Item>Item 3 </Item>
-                   <Item>Item 4</Item>
+                   <Item>Web Application</Item>
+                   <Item>Mobile Application</Item>
+                   <Item>.NET Framework</Item>
+                   <Item>Relational Databases</Item>
+                   <Item>SharePoint</Item>
                </Carousel>
            </div>
        )
