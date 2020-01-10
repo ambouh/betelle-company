@@ -12,7 +12,8 @@ const Item = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 20px
 `;
 
 class CarouselPage extends Component {
@@ -27,6 +28,7 @@ class CarouselPage extends Component {
                    <Item>.NET Framework</Item>
                    <Item>Relational Databases</Item>
                    <Item>SharePoint</Item>
+                   <Item>Online Branding</Item>
                </Carousel>
            </div>
        )

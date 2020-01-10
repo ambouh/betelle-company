@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import CarouselContainer from "./CarouselContainer";
 import Wrapper from "./Wrapper";
 import CarouselSlot from "./CarouselSlot";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
 
 class Carousel extends Component {
     constructor(props) {
@@ -39,9 +41,9 @@ class Carousel extends Component {
     };
 
     prevSlide = () => {
-        const { position } = this.state
-        const { children } = this.props
-        const numItems = children.length
+        const { position } = this.state;
+        const { children } = this.props;
+        const numItems = children.length ;
         this.doSliding('prev', position === 0 ? numItems - 1 : position - 1)
     }
 
@@ -49,7 +51,7 @@ class Carousel extends Component {
       this.setState({
           sliding: true,
           direction: direction,
-          position
+          position: position
 
       });
 
@@ -66,9 +68,9 @@ class Carousel extends Component {
         const {sliding, position, direction} = this.state;
 
         return (
-            <div>
-                <h2>{ title }</h2>
                 <Wrapper>
+                    <div className={"carousel"}>
+                    <button onClick={ () => this.prevSlide() }><FontAwesomeIcon icon={faAngleLeft} size="3x"/></button>
                     <CarouselContainer sliding={sliding} position={position} direction={direction}>
                         {children.map((child, index)=> (
                             <CarouselSlot
@@ -81,10 +83,10 @@ class Carousel extends Component {
                         )}
 
                     </CarouselContainer>
-                    <button onClick={ () => this.prevSlide() }>Previous</button>
-                    <button onClick={ () => this.nextSlide() }>Next</button>
+                    <button><FontAwesomeIcon icon={faAngleRight} size="3x"  onClick={ () => this.nextSlide() } /></button>
+                    </div>
                 </Wrapper>
-            </div>
+
         )
     }
 }
