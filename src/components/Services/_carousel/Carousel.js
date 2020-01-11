@@ -5,6 +5,8 @@ import Wrapper from "./Wrapper";
 import CarouselSlot from "./CarouselSlot";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+import Item from "./Item";
 
 class Carousel extends Component {
     constructor(props) {
@@ -12,12 +14,14 @@ class Carousel extends Component {
         this.state = {
             position: 0,
             direction: 'next',
-            sliding: false
+            sliding: false,
+            activeTab: this.props.children[0].props.label,
         }
     }
     static propTypes = {
         title: PropTypes.string,
         children: PropTypes.node,
+
     };
 
     getOrder(itemIndex) { //takes DOM index of an item
@@ -62,28 +66,40 @@ class Carousel extends Component {
       }, 50)
     };
 
+    onClickTabItem = (tab) => {
+        this.setState({ activeTab: tab });
+    }
 
     render(){
         const {title, children} = this.props;
-        const {sliding, position, direction} = this.state;
+        const {sliding, position, direction, activeTab} = this.state;
 
         return (
                 <Wrapper>
                     <div className={"carousel"}>
                     <button onClick={ () => this.prevSlide() }><FontAwesomeIcon icon={faAngleLeft} size="3x"/></button>
                     <CarouselContainer sliding={sliding} position={position} direction={direction}>
-                        {children.map((child, index)=> (
-                            <CarouselSlot
-                                key= { index }
-                                order={ this.getOrder(index) }
-                            >
-                                {child}
-                            </CarouselSlot>
-                            )
-                        )}
+                        {children.map((child, index) => {
+                            const { label } = child.props;
 
+                            return (
+                                <CarouselSlot
+                                    key= { index }
+                                    order={ this.getOrder(index) }
+                                    onClick={this.onClickTabItem}
+                                >
+                                    <Item>{label}</Item>
+                                </CarouselSlot>
+                            )
+                        })}
                     </CarouselContainer>
                     <button><FontAwesomeIcon icon={faAngleRight} size="3x"  onClick={ () => this.nextSlide() } /></button>
+                    </div>
+                    <div className="tab-content">
+                        {children.map((child) => {
+                            if (child.props.label !== activeTab) return undefined;
+                            return child.props.children;
+                        })}
                     </div>
                 </Wrapper>
 
