@@ -2,13 +2,8 @@ import React,{Component} from 'react';
 import styled from 'styled-components';
 
 import Carousel from './_carousel/Carousel';
-
-const Item = styled.div`
-background: darkorange;
-text-align: center;
-padding: 50px;
-color: white;
-`;
+import Item from './_carousel/Item'
+import Web from './_services/web'
 
 class CarouselPage extends Component {
     render(){
@@ -17,10 +12,25 @@ class CarouselPage extends Component {
                <Carousel
                 title={"Carousel"}
                >
-                   <Item>Item 1</Item>
-                   <Item>Item 2</Item>
-                   <Item>Item 3 </Item>
-                   <Item>Item 4</Item>
+                   <Item label={"Web Application"}>
+                       <Web title={"web development"}/>
+                   </Item>
+                   <Item label={"Mobile Application"}>
+                       <Web title={"Mobile Application"}/>
+                   </Item>
+                   <Item label={".NET Framework"}>
+                       <Web title={".NET Framework"}/>
+                   </Item>
+                   <Item label={"Relational Database"}>
+
+                       <Web title={"Relational Database"}/>
+                   </Item>
+                   <Item label={"SharePoint"}>
+                       <Web title={"SharePoint"}/>
+                   </Item>
+                   <Item label={"Online Branding"}>
+                       <Web title={"Online Branding"}/>
+                   </Item>
                </Carousel>
            </div>
        )
