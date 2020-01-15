@@ -1,3 +1,5 @@
+@import "../../styles/media";
+
 $servContainer-bg: #f1f5f8;
 $title-color: #2b8ec8;
 .servicesContainer{
@@ -6,12 +8,7 @@ $title-color: #2b8ec8;
 
   .columns-span-2 {
     display: flex;
-    flex-direction: row;
   }
-  .equal {
-    flex: 1;
-  }
-
   .content {
     // background: #fff;
     border-radius: 5px;
@@ -21,6 +18,10 @@ $title-color: #2b8ec8;
       color: $title-color;
       padding: 0;
       margin: 0;
+
+      @include md {
+        display: none;
+      }
     }
     .h4 {
       font-size: 24px;
@@ -43,24 +44,30 @@ $title-color: #2b8ec8;
     }
 
     .tab-list-item {
-      display: inline-block;
-      list-style: none;
-      margin: 0.1em 0.5em 0em;
-      padding: 1rem;
-      cursor: pointer;
+      background: #2b8ec8;
+      text-align: center;
+      color: white;
+      height: 60px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
       font-size: 20px;
+      cursor: pointer;
     }
 
     .tab-list-active {
-      background-color: white;
-      border-radius: 10px;
+      background-color: #c7e3f5;
+      color: #4c94be; //#2b8ec8;
+      font-weight: bold;
     }
 
     .carousel {
       width: 100%;
       display: flex;
       flex-direction: row;
-      margin: 60px 0;
+      margin: 60px 0 20px;
 
       button {
         margin: 0 10px;
@@ -71,7 +78,7 @@ $title-color: #2b8ec8;
         cursor: pointer;
         outline: none;
         color: #2b8ec8;
-        background: #b2d1d5;// #c4c4c4;
+        background: #c7e3f5; //#b2d1d5;// #c4c4c4;
       }
     }
 

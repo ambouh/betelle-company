@@ -12,24 +12,18 @@ class CarouselPage extends Component {
                <Carousel
                 title={"Carousel"}
                >
-                   <Item label={"Web Application"}>
-                       <Web title={"web development"}/>
+                   <Item label={"Software Development"}>
+                       <Web title={"Software Development"}/>
                    </Item>
-                   <Item label={"Mobile Application"}>
-                       <Web title={"Mobile Application"}/>
+                   <Item label={"Database"}>
+                       <Web title={"Database"}/>
                    </Item>
-                   <Item label={".NET Framework"}>
-                       <Web title={".NET Framework"}/>
+                   <Item label={"Sharepoint"}>
+                       <Web title={"Sharepoint"}/>
                    </Item>
-                   <Item label={"Relational Database"}>
+                   <Item label={"UI/UX & Branding"}>
 
-                       <Web title={"Relational Database"}/>
-                   </Item>
-                   <Item label={"SharePoint"}>
-                       <Web title={"SharePoint"}/>
-                   </Item>
-                   <Item label={"Online Branding"}>
-                       <Web title={"Online Branding"}/>
+                       <Web title={"UI/UX & Branding"}/>
                    </Item>
                </Carousel>
            </div>
