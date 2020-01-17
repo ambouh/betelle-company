@@ -7,44 +7,30 @@ class ServiceWrapper extends Component {
         return (
             <div>
                 <Accordion>
-                    <div label='Web Applications'>
+                    <div label="Software Development">
                         <p>
-                            Building web applications as experts in
-                            different technologies:
-                        </p>
-                        <p>
-                            ASP.Net Core,
-                            MVC, MVVM, HTML, Bootstrap, SPA,
-                            JavaScript,  jQuery, AJAX, CSS,
-                            TypeScript, IIS, E-Commerce.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div label='Mobile Application'>
+                    <div label="Database">
                         <p>
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                            accumsan lacus vel facilisis.
+                            Our database experts can provide guidance on everything from database design and implementation to optimization.
                         </p>
                     </div>
-                    <div label='.NET Framework'>
+                    <div label="Sharepoint">
                         <p>
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                            accumsan lacus vel facilisis.
+                            Collaboration and process automation made easy. Let us help with:
+                            <ul>
+                                <li>Team collaboration</li>
+                                <li>Office 365</li>
+                                <li>Record management</li>
+                                <li>Content management</li>
+                            </ul>
                         </p>
                     </div>
-                    <div label='Relational Databases'>
+                    <div label="UI/UX & Branding">
                         <p>
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                            accumsan lacus vel facilisis.
-                        </p>
-                    </div>
-                    <div label='SHAREPOINT'>
-                        <p>
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                            accumsan lacus vel facilisis.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
                 </Accordion>

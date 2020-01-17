@@ -84,6 +84,8 @@ class Carousel extends Component {
 
                             return (
                                 <CarouselSlot
+                                    activeTab={activeTab}
+                                    label={label}
                                     key= { index }
                                     order={ this.getOrder(index) }
                                     onClick={this.onClickTabItem}
