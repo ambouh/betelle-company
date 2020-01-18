@@ -5,6 +5,13 @@ $emphasis-text1: #2b8ec8;
 .ContactFormContent {
   background: $contactFormBg;
   padding: 0 0 3rem;
+
+  .wrapper {
+
+    @include rwd(500) {
+      padding: 0;
+    }
+  }
   h3{
     margin: 0;
     border-left: 1px solid $emphasis-text1;
@@ -14,6 +21,12 @@ $emphasis-text1: #2b8ec8;
     position: relative;
     top: 2.5rem;
     left: 3rem;
+
+    @include rwd(500){
+      left: 2rem;
+      top: 2.0rem;
+      font-size: 25px;
+    }
 
   }
   .columns-span-2 {
@@ -39,6 +52,11 @@ $emphasis-text1: #2b8ec8;
     }
     @include sm {
       width: 27rem;
+    }
+
+    @include rwd(500){
+      width: 100%;
+      padding: 2rem;
     }
     .formGroup {
       display: flex;
