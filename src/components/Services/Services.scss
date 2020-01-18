@@ -6,6 +6,12 @@ $title-color: #2b8ec8;
   background: $servContainer-bg;
   padding: 0rem 0 10rem;
 
+  .wrapper {
+
+    @include rwd(500){
+      padding: 1rem;
+    }
+  }
   .columns-span-2 {
     display: flex;
   }

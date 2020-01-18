@@ -10,7 +10,7 @@ $footer-height: 38em;
 $footer-height-small: 66rem;
 $footer-height-extra-small: 70rem;
 $wrapper-padding: 0 6.25rem;
-$wrapper-padding-sm: 0 3rem;
+$wrapper-padding-sm: 0 2rem;
 $wrapper-padding-md: 0 2rem;
 $container-bg: #f1f5f8;
 .wrapper{
@@ -18,13 +18,14 @@ $container-bg: #f1f5f8;
   margin: 0 auto;
   padding: $wrapper-padding;
 
+  @include md {
+    padding: $wrapper-padding-md;
+  }
+
   @include sm{
     padding: $wrapper-padding-sm;
   }
 
-  @include md {
-    padding: $wrapper-padding-md;
-  }
 }
 
 .text {
@@ -42,7 +43,7 @@ body {
   height: 100%;
 
   @include sm {
-    hyphens: auto;
+    hyphens: none;
   }
 }
 h1{
