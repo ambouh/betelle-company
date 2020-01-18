@@ -8,17 +8,17 @@ const Slot = styled.div`
     margin-right: 20px;
     order: ${(props) => props.order };
     
-    @media ${device.sm} {  
-        flex-basis: 100%;
-    };
+    @media ${device.lg} {  
+        flex-basis: 47%;
+    } ;
     
     @media ${device.md} {  
         flex-basis: 47%;
     };
     
-    @media ${device.lg} {  
-        flex-basis: 47%;
-    } ;   
+    @media ${device.sm} {  
+        flex-basis: 100%;
+    };   
 `;
 
 class CarouselSlot extends Component {
