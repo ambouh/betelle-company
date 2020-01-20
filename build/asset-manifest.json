@@ -1,7 +1,7 @@
 {
-  "main.css": "/betelle-company/static/css/main.f77130aa.chunk.css",
-  "main.js": "/betelle-company/static/js/main.2ce3c3be.chunk.js",
-  "main.js.map": "/betelle-company/static/js/main.2ce3c3be.chunk.js.map",
+  "main.css": "/betelle-company/static/css/main.3f485d56.chunk.css",
+  "main.js": "/betelle-company/static/js/main.b53b568d.chunk.js",
+  "main.js.map": "/betelle-company/static/js/main.b53b568d.chunk.js.map",
   "static/js/1.7cae09b3.chunk.js": "/betelle-company/static/js/1.7cae09b3.chunk.js",
   "static/js/1.7cae09b3.chunk.js.map": "/betelle-company/static/js/1.7cae09b3.chunk.js.map",
   "runtime~main.js": "/betelle-company/static/js/runtime~main.4136e793.js",
@@ -11,8 +11,8 @@
   "static/media/picture2.png": "/betelle-company/static/media/picture2.5be19c1c.png",
   "static/media/picture3.png": "/betelle-company/static/media/picture3.91d93b04.png",
   "static/media/mission.png": "/betelle-company/static/media/mission.093dd1a8.png",
-  "static/css/main.f77130aa.chunk.css.map": "/betelle-company/static/css/main.f77130aa.chunk.css.map",
+  "static/css/main.3f485d56.chunk.css.map": "/betelle-company/static/css/main.3f485d56.chunk.css.map",
   "index.html": "/betelle-company/index.html",
-  "precache-manifest.2c343eefd54b65a9d300da49247d79ff.js": "/betelle-company/precache-manifest.2c343eefd54b65a9d300da49247d79ff.js",
+  "precache-manifest.5dc7680762ac816cc10223bd31dd473a.js": "/betelle-company/precache-manifest.5dc7680762ac816cc10223bd31dd473a.js",
   "service-worker.js": "/betelle-company/service-worker.js"
 }
